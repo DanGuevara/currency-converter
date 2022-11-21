@@ -1,0 +1,46 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+  align-items: center;
+
+  &__table {
+    width: 80%;
+    border-collapse: collapse;
+
+    > tr:nth-child(even) {
+      background-color: lightskyblue;
+    }
+
+    td, th {
+      border: 1px solid #000;
+      text-align: left;
+      padding: 8px;
+    }
+  }
+}
+
+.table {
+  &__header {
+    &--date {
+      width: 180px;
+    }
+
+    &--from {
+      width: 80px;
+    }
+
+    &--amount {
+      width: 80px;
+    }
+
+    &--to {
+      width: 80px;
+    }
+
+    &--result {
+      width: 80px;
+    }
+  }
+}

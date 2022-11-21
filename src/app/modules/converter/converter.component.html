@@ -1,0 +1,15 @@
+<div class="converter" [formGroup]="form">
+  <span class="converter__title">Currency Converter</span>
+  <div class="info" style="display: flex; flex-direction: row; justify-content: center">
+    <input type="number" formControlName="amount">
+    <span>From: </span>
+    <select formControlName="fromCurrency">
+      <option *ngFor="let currency of (currenciesList$ | async)" [value]="currency.code">{{currency.code}}</option>
+    </select>
+    <span>To: </span>
+    <select formControlName="toCurrency">
+      <option *ngFor="let currency of (currenciesList$ | async)" [value]="currency.code">{{currency.code}}</option>
+    </select>
+  </div>
+  <span class="converter__result">{{convertResultText$ | async}}</span>
+</div>

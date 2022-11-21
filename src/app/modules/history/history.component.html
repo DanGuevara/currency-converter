@@ -1,0 +1,18 @@
+<div class="history">
+  <table class="history__table">
+    <tr>
+      <th class="table__header--date">Date</th>
+      <th class="table__header--from">From</th>
+      <th class="table__header--amount">Amount</th>
+      <th class="table__header--to">To</th>
+      <th class="table__header--result">Result</th>
+    </tr>
+    <tr *ngFor="let convert of history">
+      <td>{{convert.date}}</td>
+      <td>{{convert.from}}</td>
+      <td>{{convert.amount}}</td>
+      <td>{{convert.to}}</td>
+      <td>{{convert.convertedAmount}}</td>
+    </tr>
+  </table>
+</div>
